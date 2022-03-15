@@ -1567,7 +1567,7 @@ QBCore.Functions.CreateUseableItem("snowball", function(source, item)
         TriggerClientEvent("inventory:client:UseSnowball", source, itemData.amount)
     end
 end)
-
+--[[
 QBCore.Functions.CreateUseableItem("driver_license", function(source, item)
 	local PlayerPed = GetPlayerPed(source)
 	local PlayerCoords = GetEntityCoords(PlayerPed)
@@ -1616,4 +1616,4 @@ QBCore.Functions.CreateUseableItem("id_card", function(source, item)
 			)
 		end
 	end
-end)
+end)]]

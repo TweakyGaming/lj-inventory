@@ -354,6 +354,46 @@ RegisterNetEvent('inventory:client:OpenInventory', function(PlayerAmmo, inventor
     end
 end)
 
+RegisterNetEvent('vendingwaterDrink:buy', function()
+    local ShopItems = {}
+    ShopItems.label = "Wasser Automat"
+    ShopItems.items = Config.itemwaterDrink
+    ShopItems.slots = #Config.itemwaterDrink
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", ShopItems)
+end)
+
+RegisterNetEvent('vendingcolaDrink:buy', function()
+    local ShopItems = {}
+    ShopItems.label = "Kurkakola Automat"
+    ShopItems.items = Config.itemcolaDrink
+    ShopItems.slots = #Config.itemcolaDrink
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", ShopItems)
+end)
+
+RegisterNetEvent('vendingsprunkDrink:buy', function()
+    local ShopItems = {}
+    ShopItems.label = "Sprunk Automat"
+    ShopItems.items = Config.itemsprunkDrink
+    ShopItems.slots = #Config.itemsprunkDrink
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", ShopItems)
+end)
+
+RegisterNetEvent('vendingSnack:buy', function()
+    local snackItems = {}
+    snackItems.label = "Candy Automat"
+    snackItems.items = Config.itemSnack
+    snackItems.slots = #Config.itemSnack
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", snackItems)
+end)
+
+RegisterNetEvent('vendingCoffee:buy', function()
+    local coffeeItems = {}
+    coffeeItems.label = "Kaffe Automat"
+    coffeeItems.items = Config.itemCoffee
+    coffeeItems.slots = #Config.itemCoffee
+    TriggerServerEvent("inventory:server:OpenInventory", "shop", "Vendingshop_", coffeeItems)
+end)
+
 RegisterNetEvent('inventory:client:UpdatePlayerInventory', function(isError)
     SendNUIMessage({
         action = "update",
