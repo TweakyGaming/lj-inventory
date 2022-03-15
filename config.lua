@@ -31,6 +31,69 @@ Config.VendingItem = {
     },
 }
 
+Config.itemwaterDrink = {
+    [1] = {
+        name = "water",
+        price = 6,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+}
+
+Config.itemcolaDrink = {
+    [1] = {
+        name = "kurkakola",
+        price = 8,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+}
+
+Config.itemsprunkDrink = {
+    [1] = {
+        name = "sprunk",
+        price = 8,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+}
+
+Config.itemSnack = {
+    [1] = {
+        name = "twerks_candy",
+        price = 6,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    }, -- add the rest of your food here
+    [2] = {
+        name = "snikkel_candy",
+        price = 6,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 2,
+    }, -- add the rest of your food here
+}
+
+Config.itemCoffee = {
+    [1] = {
+        name = "coffee",
+        price = 8,
+        amount = 50,
+        info = {},
+        type = "item",
+        slot = 1,
+    },
+}
+
 Config.CraftingItems = {
     [1] = {
         name = "lockpick",
